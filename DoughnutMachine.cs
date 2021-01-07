@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Orbai_Bogdan_Lab2
+
+namespace Crisan_AndreaMaria_Lab2
 {
     class DoughnutMachine
     {
         private DoughnutType mFlavor;
-
         public DoughnutType Flavor
         {
             get
@@ -25,6 +25,7 @@ namespace Orbai_Bogdan_Lab2
             get
             {
                 return (Doughnut)mDoughnuts[Index];
+
             }
             set
             {
@@ -65,6 +66,7 @@ namespace Orbai_Bogdan_Lab2
         }
         public void MakeDoughnuts(DoughnutType dFlavor)
         {
+
             Flavor = dFlavor;
             switch (Flavor)
             {
@@ -76,6 +78,7 @@ namespace Orbai_Bogdan_Lab2
             }
             doughnutTimer.Start();
         }
+
     }
     public enum DoughnutType
     {
@@ -88,6 +91,7 @@ namespace Orbai_Bogdan_Lab2
     class Doughnut
     {
         private DoughnutType mFlavor;
+
         public DoughnutType Flavor
         {
             get
@@ -118,12 +122,12 @@ namespace Orbai_Bogdan_Lab2
             {
                 return mTimeOfCreation;
             }
+
         }
         public Doughnut(DoughnutType aFlavor) // constructor
         {
             mTimeOfCreation = DateTime.Now;
             mFlavor = aFlavor;
         }
-
     }
 }
